@@ -1,6 +1,6 @@
-# ERC20
+# ERC20 CONTRACT
 
-This is a contract to mint,transfer and burn the token from a walllet.
+This is a contract to mint,transfer and burn the token from a address.
 
 
 ## Description
