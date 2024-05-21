@@ -18,4 +18,12 @@ contract NewToken is ERC20, ERC20Burnable, Ownable, ERC20Permit {
         _mint(to, amount);
     }
     
+    function transfer(address to, uint256 amount) public override returns (bool) {
+        _transfer(_msgSender(), to, amount);
+        return true;
+    }
+
+    function burn(uint256 amount) public override {
+        _burn(_msgSender(), amount);
+    }
 }
